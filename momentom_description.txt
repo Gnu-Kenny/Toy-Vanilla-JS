@@ -1,0 +1,12 @@
+[clock.js]
+항상 init 부터.
+HTML과 javascript에서 class 이름을 어떻게 쓰는지
+calss이름을 css에서도 동일하게 쓰고 싶고
+같은 이름을 javascript에서도 사용하고 싶기 때문
+
+삼항 연산자
+
+[greeting.js]
+localStorage 
+localStorage.setItem("myCat",'Tom');
+const cat = localStorage.getItem('myCat');
