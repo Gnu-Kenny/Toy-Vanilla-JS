@@ -1,0 +1,63 @@
+javascript Version
+ES5 -> ECMAScript5
+ES6 -> ECMAScript6
+=> specification = 체계 메뉴얼 , 안내 책자 명세서
+
+바닐라 자바스크립트 : 라이브러리가 없는 자바스크립트
+왜 바닐라 js가 중요한가?
+근본
+
+css 파일은 header에
+js는 항상 body 아래에 있어야함.
+
+let ,var 바뀔수 있는 값
+const 상수 초기화
+let / var 차이: scope
+var => fucntion
+let => { }블록 , 같은 변수를 두번 선언 불가
+
+객체 안 value 값은 객체가 const여도 변경 가능하다.
+const NicoInfo = {
+    name:'kenny',
+    age:33,
+    gender:"male",
+    isHandsome:true
+}
+console.log(NicoInfo.gender);
+NicoInfo.gender = "Female";
+console.log(NicoInfo.gender);
+
+console 은 내장 객체
+
+string 표현 `` 백틱 사용
+console.log(`Hello ${name} You are ${age} years old`);
+
+*DOM(Document Obeject Module): html에 있는 모든 요소를 가지고 온다.
+ 그리고 그것을 객체로 바꾼다.
+innerHTML => html 태그 안 요소 값을 바꿈.
+const title = document.getElementById("title");
+title.innerHTML = "Hi! This is from title.innerHTML";
+
+document
+
+querySelector : 노드의 첫번째 자식을 반환
+- id로 찾으려면 #붙이고 class 로 찾으려면 . 붙일것.
+=>> const title = document.getElementById("title"); 과 비슷한 역할
+window
+window.addEventListner() -> 이벤트 받기를 기다림.
+-resize : 
+function handleResize(){
+    console.log("I have been resized")
+}
+
+window.addEventListener("resize",handleResize);  
+//함수를 특정 시점에 호출하고 싶으면 '( )' 제거 /handleResize() 형태면 즉시 호출
+
+function handleResize(event){
+}
+//이벤트 실행시 매개 변수에 객체 자동 생성한다. 이를 유용하게 쓸 수 있음.
+
+title.addEventListener("click", handleClick);
+title.addEventListener("mouseenter", handleClick);
+이벤트 기능 확인 하는 곳
+javascript dom event mdn
